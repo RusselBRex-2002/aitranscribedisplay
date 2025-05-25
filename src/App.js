@@ -26,7 +26,7 @@ function App() {
 
   // Poll the backend every 3 seconds (3000ms)
   useEffect(() => {
-    const intervalId = setInterval(fetchLatestAnswer, 3000);
+    const intervalId = setInterval(fetchLatestAnswer, 1000);
     return () => clearInterval(intervalId);
   }, []);
 
